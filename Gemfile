@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'devise'
 gem 'faker'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
