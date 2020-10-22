@@ -7,7 +7,7 @@ class ShoppingCart
   end
 
   def order
-    @order ||= Order.find_or_create_by(token: @token, status: 'cart') do |order|
+    @order ||= Order.find_or_create_by(user: @token, status: 'cart') do |order|
       order.sub_total = 0
     end
   end
@@ -18,7 +18,7 @@ class ShoppingCart
 
   def add_item(product_id:, quantity: 1)
     product = Product.find(product_id)
-
+    
     order_item = order.items.find_or_initialize_by(
       product_id: product_id
     )
