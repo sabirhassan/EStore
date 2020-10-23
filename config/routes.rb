@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   root to: 'categories#index'
+  
+  devise_scope :user do
+    get '/users/sign_out', to:'devise/sessions#destroy'
+  end
+
+  ActiveAdmin.routes(self)
 
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
  

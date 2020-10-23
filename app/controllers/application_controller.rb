@@ -7,5 +7,9 @@ class ApplicationController < ActionController::Base
     @current_cart ||= ShoppingCart.new(token: current_user)
   end
   helper_method :current_cart
-  
+
+  def access_denied(exception)
+    redirect_to root_path, alert: exception.message
+  end
+
 end

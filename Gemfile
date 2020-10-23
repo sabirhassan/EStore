@@ -32,6 +32,7 @@ gem 'devise'
 gem 'faker'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
+gem 'activeadmin'
 
 
 # Reduces boot times through caching; required in config/boot.rb
