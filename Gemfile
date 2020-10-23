@@ -33,7 +33,7 @@ gem 'faker'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'activeadmin'
-
+gem 'cancancan'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
