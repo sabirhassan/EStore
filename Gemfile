@@ -34,6 +34,8 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'activeadmin'
 gem 'cancancan'
+gem 'kaminari'
+gem 'searchkick'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

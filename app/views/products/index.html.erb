@@ -1,6 +1,6 @@
 <h2>
   <%= link_to "Categories", root_path %>
-  <%= @category.title %>
+  <%= @category ? @category.title : nil %>
   Products
 </h2>
 

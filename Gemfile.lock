@@ -101,6 +101,14 @@ GEM
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
       railties (>= 3.2)
+    elasticsearch (7.9.0)
+      elasticsearch-api (= 7.9.0)
+      elasticsearch-transport (= 7.9.0)
+    elasticsearch-api (7.9.0)
+      multi_json
+    elasticsearch-transport (7.9.0)
+      faraday (~> 1)
+      multi_json
     erubi (1.9.0)
     faker (2.14.0)
       i18n (>= 1.6, < 2)
@@ -247,6 +255,10 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    searchkick (4.4.1)
+      activemodel (>= 5)
+      elasticsearch (>= 6)
+      hashie
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
@@ -304,6 +316,7 @@ DEPENDENCIES
   dotenv-rails
   faker
   jbuilder (~> 2.7)
+  kaminari
   listen (~> 3.2)
   omniauth
   omniauth-google-oauth2
@@ -312,6 +325,7 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
   sass-rails (>= 6)
+  searchkick
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
