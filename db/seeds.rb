@@ -48,3 +48,9 @@ PRODUCTS_COUNT.times do
   product.save!
 
 end
+
+User.create(
+  email: "admin@admin.com",
+  password: "admin123",
+  admin: true
+)
