@@ -36,6 +36,7 @@ gem 'activeadmin'
 gem 'cancancan'
 gem 'kaminari'
 gem 'searchkick'
+gem 'rails_admin', '~> 2.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

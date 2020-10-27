@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root to: 'categories#index'
   
   post '/search', to: 'products#index'
 
-  devise_scope :user do
-    get '/users/sign_out', to:'devise/sessions#destroy'
-  end
+#  devise_scope :user do
+#   get '/users/sign_out', to:'devise/sessions#destroy'
+#  end
 
-  ActiveAdmin.routes(self)
+#  ActiveAdmin.routes(self)
 
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
  
