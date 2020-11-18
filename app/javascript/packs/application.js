@@ -15,3 +15,31 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+//baguettebox.js bootstrap bootstrap-select contact-us-cgi custom form-validator isotope jquery.nicescroll jquery-ui owl.carousel popper
+
+import "baguettebox.js";
+import "bootstrap";
+import "bootstrap-select";
+import "contact-us-cgi";
+import "custom";
+import "form-validator";
+import "isotope";
+import "jquery.nicescroll";
+import "jquery-ui";
+import "owl.carousel";
+import "popper";
+import "../vendor/bootsnav"
+import "../vendor/contact-form-script"
+import "../vendor/inewsticker"
+import "../vendor/images-loded.min"
+import "../vendor/jquery-3.2.1.min"
+import "../vendor/jquery.superslides.min"
+
+// import the application.scss we created for the CSS
+import "../css/application.scss";
+
+// copy all static images under ../img and ../svg to the output folder,
+// and you can reference them with <%= image_pack_tag 'media/img/abc.png' %> or <%= image_pack_tag 'media/svg/def.svg' %>
+const images = require.context('../img', true)
+const imagePath = (name) => images(name, true)

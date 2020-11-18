@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   end
 
   resources :order_items, path: 'cart/items'
+  resources :static
 
   get '/cart', to: 'order_items#index'
   
